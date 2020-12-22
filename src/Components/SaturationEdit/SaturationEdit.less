@@ -1,0 +1,30 @@
+.fgroup {
+    display: flex;
+}
+.fgroup:not(:last-child) {
+    margin-bottom: 5px;
+}
+
+.fgroup-field {
+    width: 100%;
+    flex-grow: 1;
+}
+
+.fgroup-label {
+    align-self: center;
+	white-space: nowrap;
+}
+
+// hack to make Inputs a but shorter
+.shrinked-input input {
+    width: calc(~'100% - 1px');
+}
+
+.saturation-help {
+    max-width: 400px;
+    margin-bottom: 10px;
+
+    code {
+        font-weight: bold;
+    }
+}

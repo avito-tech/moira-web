@@ -1,0 +1,65 @@
+@import '~styles/variables.less';
+@import '~styles/mixins.less';
+
+.lc_lc_no-result {
+    color: #999;
+    font-size: 24px;
+    text-align: center;
+}
+
+.lc_lc_table {
+    .lc_lc_t_header {
+        color: #666;
+        font-style: italic;
+    }
+
+    .lc_lc_t_row {
+        padding: 15px 0;
+
+        &:not(.lc_lc_t_header) {
+            border-top: 1px solid #eee;
+        }
+    }
+
+    .lc_lc_t_r_60 {
+        flex-basis: 60%;
+    }
+
+    .lc_lc_t_r_80 {
+        flex-basis: 80%;
+    }
+
+    .lc_lc_t_r_contact:not(:last-child) {
+        border-right: 1px solid #555;
+    }
+
+    .lc_lc_t_r_no-result {
+        color: #999;
+    }
+
+    .lc_lc_t_r_row {
+        &:not(:first-child) {
+            padding-top: 5px;
+        }
+
+        &:not(:last-child) {
+            padding-bottom: 5px;
+        }
+
+        & > span {
+            padding: 0 3px;
+        }
+    }
+
+    .lc_lc_t_r_user {
+        font-weight: bold;
+    }
+}
+
+.lc_search-wrap {
+    display: flex;
+
+    & > div {
+        margin-right: 2em;
+    }
+}

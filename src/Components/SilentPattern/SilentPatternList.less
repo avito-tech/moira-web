@@ -1,0 +1,66 @@
+@import '~styles/variables.less';
+@import '~styles/mixins.less';
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px;
+
+    &:not(.header) {
+        border-top: 1px solid #eee;
+    }
+}
+
+.header {
+    color: #666;
+    margin-top: 20px;
+
+    .sortable {
+        cursor: pointer;
+    }
+
+    .sorted {
+        font-weight: bold;
+    }
+
+    .asc:after {
+        content: '\00a0\2191';  // стрелка вверх
+    }
+
+    .desc:after {
+        content: '\00a0\2193';  // стрелка вниз
+    }
+}
+
+.check {
+    margin-right: 10px;
+}
+
+.created_at, .login, .pattern {
+    width: 280px;
+}
+
+.control {
+    width: 160px;
+}
+
+.trash {
+    padding-left: 10px;
+    width: 80px;
+}
+
+.info {
+    width: 100%;
+}
+
+.group {
+    margin-top: 10px;
+}
+
+.title {
+    margin: 0;
+}
+
+.item {
+    margin-top: 5px;
+}

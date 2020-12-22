@@ -1,0 +1,42 @@
+@import '~styles/variables.less';
+@import '~styles/mixins.less';
+
+.group {
+    display: flex;
+    align-items: center;
+
+    & > * {
+        margin-right: 5px;
+    }
+}
+
+.time-range-description-title {
+    margin-bottom: 10px;
+}
+
+.days {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+
+    & > * {
+        margin-right: 15px;
+    }
+}
+
+.radio {
+    display: flex;
+    margin-right: 25px;
+    align-items: center;
+    cursor: default;
+
+    & > * {
+        margin-right: 5px;
+    }
+}
+
+.tooltip {
+    font-size: 150%;
+    position: relative;
+    top: -3px;
+}

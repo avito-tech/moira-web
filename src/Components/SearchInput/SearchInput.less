@@ -1,0 +1,41 @@
+@import '~styles/variables.less';
+@import '~styles/mixins.less';
+
+.search-input {
+    position: relative;
+
+    a {
+        color: gray;
+        cursor: default;
+
+        font-size: 22px;
+        opacity: 0.5;
+
+        position: absolute;
+        right: 5px;
+        width: 45px;
+        z-index: 100;
+
+        // this is spinner
+        div {
+            position: absolute;
+            right: 27px;
+            top: 4px;
+        }
+
+        // this is search icon
+        & > span {
+            position: absolute;
+            margin-right: 0;
+            right: 0;
+        }
+    }
+
+    input {
+        padding-right: 30px;
+
+        &.with-spinner {
+            padding-right: 48px;
+        }
+    }
+}

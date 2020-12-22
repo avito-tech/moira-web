@@ -1,0 +1,76 @@
+.link {
+    display: block;
+    // padding-top: 15px;
+    // padding-bottom: 15px;
+    text-decoration: none !important;
+}
+
+.title {
+    display: flex;
+    margin-top: -4px;
+    align-items: center;
+}
+
+.name {
+    overflow: hidden;
+    max-width: 100%;
+    // font-size: 18px;
+    // line-height: 24px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #3072c4;
+
+    .link:hover & {
+        text-decoration: underline;
+    }
+}
+
+.metricTable {
+
+    .metricRow:not(:first-child) {
+        border-top: 1px solid #eee;
+    }
+}
+
+.metricRow {
+    display: block;
+}
+
+.metricItem {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.metric {
+    min-width: 40%;
+}
+.trigger {
+    min-width: 20%;
+}
+.errorCount {
+    max-width: 5%;
+}
+
+.statusIcon {
+    margin-right: 9px;
+}
+
+.inlineControl {
+    display: inline-block;
+}
+.inlineControl:not(:first-child) {
+    padding-left: 1em;
+}
+.inlineControl:not(:last-child) {
+    padding-right: 1em;
+}
+
+.tags {
+    margin-top: 3px;
+}
+
+.sorting {
+    cursor: pointer;
+}
