@@ -170,7 +170,7 @@ class BaseSilentContainer extends React.Component<Props, State> {
                         <Tooltip className={cn("silent-pattern-help")} pos="top right" render={() => {}}>
                             <Link
                                 icon="HelpDot"
-                                href="https://cf/display/BD/Silent+patterns"
+                                href="https://wiki.cc/silent-patterns"  // place the link to silent-patterns.md file here
                                 target="_blank"
                                 title="Documentation"
                                 to={""}
